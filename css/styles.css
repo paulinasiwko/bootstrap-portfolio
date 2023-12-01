@@ -1,0 +1,114 @@
+/* General CSS */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  
+  p {
+    margin: 0;
+  }
+
+  :root {
+    --dark-yellow: #ffc107;
+  }
+
+  /* Navbar */
+
+  .img-me-nav {
+    width: 60px;
+    border: 3px solid var(--dark-yellow);
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  nav a {
+    text-transform: uppercase;
+  }
+
+  .nav-link {
+    margin-right: 30px;
+    font-weight: 600;
+  }
+
+  .nav-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: var(--dark-yellow);
+    text-decoration-thickness: 4px;
+  }
+
+  /* Jumbotron */
+
+  .background {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: calc(100vh - 100px);
+  }
+
+  .sectionHeading {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .background p {
+    font-size: 18px !important;
+    margin-bottom: 30px;  
+}
+
+  .background button {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .background button:hover {
+    background-color: white;
+    border: 1px solid white;
+    border-bottom: 4px solid var(--dark-yellow);
+    border-radius: 0;
+  }
+
+/* About Me */
+
+
+/* Work Cards */
+
+.single-project-card {
+    margin: 20px 30px;
+}
+
+.imageContainer {
+    padding: 10px;
+}
+
+.imageContainer img {
+    width: 100%;
+    border-left: 15px solid var(--dark-yellow);
+}
