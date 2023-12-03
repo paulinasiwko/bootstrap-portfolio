@@ -28,7 +28,7 @@
   :root {
     --dark-yellow: #ffc107;
     --white: white;
-    --light-grey: lightgrey;
+    --light-grey: rgb(249, 245, 245);
   }
 
   /* Navbar */
@@ -65,10 +65,12 @@
 
   .modal-content {
     background-color: var(--dark-yellow);
+    border-radius: 50%;
   }
 
   .modal img {
     width: 470px;
+    border-radius: 50%;
   }
 
   /* Jumbotron */
@@ -126,6 +128,26 @@
   font-weight: 600;
 }
 
+/* Skills */
+
+.skillsContainer {
+  margin-bottom: 50px;
+}
+
+.skillsRow {
+  display: flex;
+  justify-content: center;
+}
+
+.skillsCard {
+  width: 6rem;
+  border: 1px solid var(--light-grey);
+  padding: 20px 25px;
+  margin: 20px;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--light-grey);
+}
+
 /* Work Cards */
 
 .card {
@@ -136,12 +158,12 @@
   border-radius: 0;
   padding-right: 0;
   padding-left: 0;
+  background-color: var(--light-grey);
 }
 
 .card:hover {
   filter: brightness(1.1);
-  border-left: 15px solid var(--dark-yellow);
-  background-color: var(--light-grey);
+  background-color: var(--white);
 }
 
 .card img {
@@ -175,26 +197,6 @@
   color: var(--white);
 }
 
-/* Skills */
-
-.skillsContainer {
-  margin-bottom: 50px;
-}
-
-.skillsRow {
-  display: flex;
-  justify-content: center;
-}
-
-.skillsCard {
-  width: 5rem;
-  border: 1px solid var(--light-grey);
-  padding: 20px 15px;
-  margin: 20px;
-  border-radius: 11px;
-  box-shadow: 0 3px 10px var(--light-grey);
-}
-
 /* Footer */
 
 footer {
@@ -208,6 +210,7 @@ footer h2 {
   padding-top: 20px;
   text-align: center;
   font-size: 48px;
+  margin-bottom: 10px;
 }
 
 .contact-details {
@@ -216,12 +219,12 @@ footer h2 {
 }
 
 .contact-details a {
-  font-size: 30px;
+  font-size: 40px;
   color: var(--white);
-  margin: 0 5px;
+  margin: 0 10px;
 }
 
 .contact-details a:hover {
   color: var(--dark-yellow);
-  font-size: 32px;
+  font-size: 45px;
 }
