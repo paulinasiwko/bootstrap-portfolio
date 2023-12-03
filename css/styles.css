@@ -28,6 +28,7 @@
   :root {
     --dark-yellow: #ffc107;
     --white: white;
+    --light-grey: lightgrey;
   }
 
   /* Navbar */
@@ -61,6 +62,10 @@
   }
 
   /* Modal */
+
+  .modal-content {
+    background-color: var(--dark-yellow);
+  }
 
   .modal img {
     width: 470px;
@@ -136,10 +141,12 @@
 .card:hover {
   filter: brightness(1.1);
   border-left: 15px solid var(--dark-yellow);
+  background-color: var(--light-grey);
 }
 
 .card img {
   width: 100%;
+  border-radius: 0;
 }
 
 .card h5 {
@@ -161,10 +168,31 @@
   right: 0;
   text-transform: uppercase;
   font-weight: 600;
+  border-radius: 0;
 }
 
 .card-body a:hover {
   color: var(--white);
+}
+
+/* Skills */
+
+.skillsContainer {
+  margin-bottom: 50px;
+}
+
+.skillsRow {
+  display: flex;
+  justify-content: center;
+}
+
+.skillsCard {
+  width: 5rem;
+  border: 1px solid var(--light-grey);
+  padding: 20px 15px;
+  margin: 20px;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--light-grey);
 }
 
 /* Footer */
