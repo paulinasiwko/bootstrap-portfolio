@@ -27,6 +27,7 @@
 
   :root {
     --dark-yellow: #ffc107;
+    --white: white;
   }
 
   /* Navbar */
@@ -72,12 +73,14 @@
   .sectionHeading {
     text-transform: uppercase;
     margin-bottom: 30px;
+    margin-top: 30px;
     text-align: center;
+    font-size: 48px;
   }
 
   .background p {
-    font-size: 18px !important;
-    margin-bottom: 30px;  
+    font-size: 18px;
+    margin-bottom: 30px;
 }
 
   .background button {
@@ -89,26 +92,102 @@
   }
 
   .background button:hover {
-    background-color: white;
-    border: 1px solid white;
+    background-color: var(--white);
+    border: 1px solid var(--white);
     border-bottom: 4px solid var(--dark-yellow);
     border-radius: 0;
   }
 
 /* About Me */
 
+.aboutMeSection {
+  background-color: var(--dark-yellow);
+}
+
+.aboutMeSection h2 {
+  color: var(--white);
+}
+
+.aboutMeSection p {
+  margin: 30px 100px 50px 100px;
+  text-align: center;
+  color: var(--white);
+  font-weight: 600;
+}
 
 /* Work Cards */
 
-.single-project-card {
-    margin: 20px 30px;
+.card {
+  width: 24rem;
+  margin: 40px auto;
+  border: 1px solid var(--white);
+  border-left: 10px solid var(--dark-yellow);
+  border-radius: 0;
+  padding-right: 0;
+  padding-left: 0;
 }
 
-.imageContainer {
-    padding: 10px;
+.card:hover {
+  filter: brightness(1.1);
+  border-left: 15px solid var(--dark-yellow);
 }
 
-.imageContainer img {
-    width: 100%;
-    border-left: 15px solid var(--dark-yellow);
+.card img {
+  width: 100%;
+}
+
+.card h5 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.card p {
+  margin-bottom: 10px;
+}
+
+.card-body {
+  position: relative;
+}
+
+.card-body a {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.card-body a:hover {
+  color: var(--white);
+}
+
+/* Footer */
+
+footer {
+  background-color: grey;
+  color: var(--white);
+  padding-bottom: 20px;
+}
+
+footer h2 {
+  text-transform: uppercase;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 48px;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-details a {
+  font-size: 30px;
+  color: var(--white);
+  margin: 0 5px;
+}
+
+.contact-details a:hover {
+  color: var(--dark-yellow);
+  font-size: 32px;
 }
