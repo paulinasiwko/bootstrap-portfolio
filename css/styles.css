@@ -158,12 +158,11 @@
   border-radius: 0;
   padding-right: 0;
   padding-left: 0;
-  background-color: var(--light-grey);
+  background-color: var(--white);
 }
 
 .card:hover {
   filter: brightness(1.1);
-  background-color: var(--white);
 }
 
 .card img {
