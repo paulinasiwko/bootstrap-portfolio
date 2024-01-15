@@ -13,9 +13,9 @@ This HTML file is linked to Bootstrap 5 CSS and a custom CSS file, incorporating
 In the footer, **Font Awesome icons** are utilized.
 
 
-The [URL] (https://paulinasiwko.github.io/bootstrap-portfolio/) of deployed application.
+The [URL](https://paulinasiwko.github.io/bootstrap-portfolio/) of deployed application.
 
-![A screenshot of the deployed application](./images/screenshot-deployed.PNG)
+![A screenshot of the deployed application](./assets/images/screenshot-deployed.PNG)
 
 ## Credits
 N/A
